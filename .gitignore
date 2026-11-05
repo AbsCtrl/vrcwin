@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+ui/runs/*
+!ui/runs/.gitkeep
+.DS_Store

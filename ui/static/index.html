@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VRCWin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>VRCWin <span class="sub">Override endgame engine</span></h1>
+  <nav id="tabs">
+    <button data-tab="scenario" class="on">Scenario</button>
+    <button data-tab="test">Test</button>
+    <button data-tab="solve">Solve</button>
+    <button data-tab="results">Results</button>
+    <button data-tab="train">Train</button>
+    <button data-tab="examine">Examine</button>
+  </nav>
+  <div id="scenario-name" class="pill" title="Scenario being edited"></div>
+</header>
+
+<main>
+<!-- SCENARIO -->
+<section id="tab-scenario" class="tab on">
+  <div class="cols">
+    <div class="fieldcol">
+      <svg id="field-edit" class="field" viewBox="-1.9 -1.9 3.8 3.8"></svg>
+      <p class="hint">Drag robots and floor stacks. Click a Toggle to cycle red / blue / neutral. Click a Goal to edit its halves.</p>
+      <div id="score-now" class="scoreline"></div>
+    </div>
+    <div class="panel">
+      <div class="row">
+        <label>Scenario <select id="scen-list"></select></label>
+        <button id="scen-load">Load</button>
+        <button id="scen-new" class="ghost">Blank</button>
+      </div>
+      <div class="row">
+        <label class="grow">Save as <input id="scen-save-name" placeholder="my_scenario"></label>
+        <button id="scen-save">Save</button>
+      </div>
+      <label class="block">Description <textarea id="f-desc" rows="2"></textarea></label>
+      <div class="row">
+        <label>Time left (s) <input id="f-time" type="number" min="1" max="105" step="0.5"></label>
+        <label>Red fixed pts <input id="f-base-r" type="number"></label>
+        <label>Blue fixed pts <input id="f-base-b" type="number"></label>
+      </div>
+      <p class="hint">Fixed points are everything already decided before this window (Auton bonus, Pins that can no longer change hands).</p>
+
+      <h3>Robots</h3>
+      <div id="robots"></div>
+
+      <h3>Goals <span class="hint">visible halves: red / blue / yellow</span></h3>
+      <div id="goals" class="grid-goals"></div>
+
+      <h3>Toggles</h3>
+      <div id="toggles" class="row"></div>
+
+      <h3>Floor stacks <button id="add-stack" class="ghost small">+ stack</button></h3>
+      <div id="stacks"></div>
+
+      <h3>Loaders</h3>
+      <div id="loaders"></div>
+
+      <details>
+        <summary>Scenario JSON</summary>
+        <textarea id="scen-json" rows="12" spellcheck="false"></textarea>
+        <button id="scen-json-apply" class="small">Apply JSON</button>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- TEST -->
+<section id="tab-test" class="tab">
+  <div class="cols">
+    <div class="fieldcol">
+      <svg id="field-replay" class="field" viewBox="-1.9 -1.9 3.8 3.8"></svg>
+      <div class="row player">
+        <button id="play">Play</button>
+        <input id="scrub" type="range" min="0" max="1000" value="0" class="grow">
+        <span id="clock" class="mono">--</span>
+      </div>
+      <div id="replay-score" class="scoreline"></div>
+      <ol id="replay-log" class="log small"></ol>
+    </div>
+    <div class="panel">
+      <h2>Play out fixed plans</h2>
+      <p class="hint">Pick a line for each robot and simulate the window many times. Instant, so it is the fast way to sanity-check the simulator and a plan idea before a full solve.</p>
+      <div id="plan-pickers"></div>
+      <div class="row">
+        <label>Simulations <input id="sim-n" type="number" value="500" min="20" max="5000" step="100"></label>
+        <label>Seed <input id="sim-seed" type="number" value="0"></label>
+        <button id="sim-run" class="primary">Simulate</button>
+      </div>
+      <div id="sim-out"></div>
+      <h2>Rule tests</h2>
+      <p class="hint">Runs everything in tests/: scoring rules, travel model, pin conservation, the replay recorder and the value model.</p>
+      <button id="tests-run">Run tests</button>
+      <pre id="tests-out" class="log"></pre>
+    </div>
+  </div>
+</section>
+
+<!-- SOLVE -->
+<section id="tab-solve" class="tab">
+  <div class="cols">
+    <div class="panel">
+      <h2>Solve the current scenario</h2>
+      <p class="hint">Screening by regret matching, then a joint-plan matrix game grown by double oracle. Quick matched the full solve to within 0.002 P(win) on the sample scenario.</p>
+      <div class="row">
+        <label>Preset <select id="solve-preset">
+          <option value="quick">Quick (about 2-3 min)</option>
+          <option value="full">Full (about 6 min)</option>
+        </select></label>
+        <label>Save result as <input id="solve-name" placeholder="my_scenario"></label>
+        <label>Seed <input id="solve-seed" type="number" value="0"></label>
+      </div>
+      <div class="row">
+        <button id="solve-run" class="primary">Solve</button>
+        <button id="sens-run">Sensitivity (±15%, 9 solves)</button>
+      </div>
+      <p class="hint">Sensitivity scales each stat for all four robots and re-solves; per-robot stat edits are ignored in that run.</p>
+    </div>
+    <div class="panel grow2">
+      <h2>Jobs</h2>
+      <div id="jobs"></div>
+      <h3 id="job-title">Log</h3>
+      <pre id="job-log" class="log tall"></pre>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section id="tab-results" class="tab">
+  <div class="row">
+    <label>Result <select id="res-list"></select></label>
+    <button id="res-load">Open</button>
+    <button id="res-to-scen" class="ghost">Load its scenario</button>
+    <button id="res-replay" class="ghost">Replay equilibrium in Test</button>
+  </div>
+  <div id="res-view"></div>
+</section>
+
+<!-- TRAIN -->
+<section id="tab-train" class="tab">
+  <div class="cols">
+    <div class="panel">
+      <h2>Learned value function</h2>
+      <p class="hint">Step two of the build order. Random endgame snapshots (built around the current scenario's field) are labelled by the solver, and a logistic model learns to rate a snapshot instantly. It must beat the margin + time-left baseline to be worth anything.</p>
+      <div class="row">
+        <label>New labelled snapshots <input id="train-n" type="number" value="20" min="1" max="500"></label>
+        <label>Seed <input id="train-seed" type="number" value=""></label>
+      </div>
+      <div class="row">
+        <button id="train-gen" class="primary">Generate and fit</button>
+        <button id="train-fit">Refit only</button>
+      </div>
+      <p class="hint">Each label is a reduced solve, about 1 min on 4 cores. The dataset is data/value_dataset.jsonl and grows across runs.</p>
+      <div id="train-info"></div>
+    </div>
+    <div class="panel grow2">
+      <h3>Calibration (out-of-fold)</h3>
+      <svg id="calib" viewBox="0 0 300 300" class="chart"></svg>
+      <h3>Weights</h3>
+      <div id="weights"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXAMINE -->
+<section id="tab-examine" class="tab">
+  <div class="cols">
+    <div class="fieldcol">
+      <svg id="field-heat" class="field" viewBox="-1.9 -1.9 3.8 3.8"></svg>
+      <div class="row">
+        <label>Heatmap for <select id="heat-robot"></select></label>
+        <button id="heat-run" class="primary">Rate positions</button>
+      </div>
+      <p class="hint">Colour = the value model's P(win) for that robot's alliance if the robot stood there instead, everything else unchanged. It reads the gradient of V as a positioning map.</p>
+    </div>
+    <div class="panel">
+      <h2>Rate the current scenario</h2>
+      <div id="eval-out"></div>
+      <h3>Features</h3>
+      <div id="feat-out"></div>
+    </div>
+  </div>
+</section>
+</main>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

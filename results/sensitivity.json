@@ -1,0 +1,436 @@
+{
+ "baseline": {
+  "p_red_win": 0.8382,
+  "e_margin_red": 47.9,
+  "top": {
+   "red 1": "take and hold Toggle R, Midfield at 10 s",
+   "red 2": "take and hold Toggle L, Midfield at 10 s",
+   "blue 1": "take and hold Toggle L, Midfield at 10 s",
+   "blue 2": "take and hold Toggle R, Midfield at the last moment"
+  },
+  "top_p": {
+   "red 1": 0.8429,
+   "red 2": 0.8429,
+   "blue 1": 0.1928,
+   "blue 2": 0.1928
+  },
+  "second_gap": {
+   "red 1": 0.005,
+   "red 2": 0.005,
+   "blue 1": 0.03,
+   "blue 2": 0.006
+  },
+  "eq_top": {
+   "red": {
+    "red 1": "take and hold Toggle R, Midfield at 10 s",
+    "red 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+   },
+   "blue": {
+    "blue 1": "score yellow on the Midfield Goal, Midfield at the last moment",
+    "blue 2": "take and hold Toggle T, Midfield at 10 s"
+   }
+  },
+  "eq_top_p": {
+   "red": 0.856,
+   "blue": 0.678
+  }
+ },
+ "speed x0.85": {
+  "p_red_win": 0.7836,
+  "e_margin_red": 33.81,
+  "top": {
+   "red 1": "score Pins (yellow where we own the Quadrant), Midfield at the last moment",
+   "red 2": "take and hold Toggle R, Midfield at 10 s",
+   "blue 1": "take and hold Toggle B, Midfield at 10 s",
+   "blue 2": "take and hold Toggle L, Midfield at 10 s"
+  },
+  "top_p": {
+   "red 1": 0.7841,
+   "red 2": 0.7841,
+   "blue 1": 0.2392,
+   "blue 2": 0.2392
+  },
+  "second_gap": {
+   "red 1": 0.001,
+   "red 2": 0.001,
+   "blue 1": 0.022,
+   "blue 2": 0.022
+  },
+  "eq_top": {
+   "red": {
+    "red 1": "take and hold Toggle R, Midfield at 10 s",
+    "red 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+   },
+   "blue": {
+    "blue 1": "score yellow on the Midfield Goal, Midfield at 10 s",
+    "blue 2": "take and hold Toggle T, Midfield at 10 s"
+   }
+  },
+  "eq_top_p": {
+   "red": 0.9,
+   "blue": 0.456
+  },
+  "changed": [
+   "red 1",
+   "red 2",
+   "blue 1",
+   "blue 2"
+  ],
+  "eq_changed": [
+   "blue"
+  ]
+ },
+ "speed x1.15": {
+  "p_red_win": 0.8313,
+  "e_margin_red": 18.25,
+  "top": {
+   "red 1": "take and hold Toggle R, Midfield at the last moment",
+   "red 2": "take and hold Toggle L, stay on it to the buzzer",
+   "blue 1": "score yellow on the Midfield Goal, Midfield at the last moment",
+   "blue 2": "take and hold Toggle T, Midfield at 10 s"
+  },
+  "top_p": {
+   "red 1": 0.8339,
+   "red 2": 0.8339,
+   "blue 1": 0.1796,
+   "blue 2": 0.1796
+  },
+  "second_gap": {
+   "red 1": 0.002,
+   "red 2": 0.002,
+   "blue 1": 0.011,
+   "blue 2": 0.011
+  },
+  "eq_top": {
+   "red": {
+    "red 1": "take and hold Toggle R, Midfield at the last moment",
+    "red 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+   },
+   "blue": {
+    "blue 1": "take and hold Toggle L, Midfield at 10 s",
+    "blue 2": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+   }
+  },
+  "eq_top_p": {
+   "red": 0.503,
+   "blue": 0.6
+  },
+  "changed": [
+   "red 1",
+   "red 2",
+   "blue 1",
+   "blue 2"
+  ],
+  "eq_changed": [
+   "red",
+   "blue"
+  ]
+ },
+ "cycle x0.85": {
+  "p_red_win": 0.8259,
+  "e_margin_red": 23.69,
+  "top": {
+   "red 1": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+   "red 2": "take and hold Toggle R, Midfield at 10 s",
+   "blue 1": "take and hold Toggle L, Midfield at 10 s",
+   "blue 2": "take and hold Toggle B, Midfield at 10 s"
+  },
+  "top_p": {
+   "red 1": 0.826,
+   "red 2": 0.826,
+   "blue 1": 0.1831,
+   "blue 2": 0.1831
+  },
+  "second_gap": {
+   "red 1": 0.0,
+   "red 2": 0.0,
+   "blue 1": 0.009,
+   "blue 2": 0.009
+  },
+  "eq_top": {
+   "red": {
+    "red 1": "take and hold Toggle R, Midfield at 10 s",
+    "red 2": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+   },
+   "blue": {
+    "blue 1": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+    "blue 2": "take and hold Toggle L, Midfield at the last moment"
+   }
+  },
+  "eq_top_p": {
+   "red": 0.464,
+   "blue": 0.305
+  },
+  "changed": [
+   "red 1",
+   "red 2",
+   "blue 2"
+  ],
+  "eq_changed": [
+   "red",
+   "blue"
+  ]
+ },
+ "cycle x1.15": {
+  "p_red_win": 0.7782,
+  "e_margin_red": 11.79,
+  "top": {
+   "red 1": "score Pins (yellow where we own the Quadrant), Midfield at the last moment",
+   "red 2": "take and hold Toggle T, Midfield at 10 s",
+   "blue 1": "take and hold Toggle L, Midfield at 10 s",
+   "blue 2": "take and hold Toggle R, Midfield at the last moment"
+  },
+  "top_p": {
+   "red 1": 0.7817,
+   "red 2": 0.7817,
+   "blue 1": 0.2221,
+   "blue 2": 0.2221
+  },
+  "second_gap": {
+   "red 1": 0.001,
+   "red 2": 0.001,
+   "blue 1": 0.0,
+   "blue 2": 0.0
+  },
+  "eq_top": {
+   "red": {
+    "red 1": "take and hold Toggle R, Midfield at 10 s",
+    "red 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+   },
+   "blue": {
+    "blue 1": "take and hold Toggle L, Midfield at 10 s",
+    "blue 2": "take and hold Toggle R, Midfield at the last moment"
+   }
+  },
+  "eq_top_p": {
+   "red": 0.6,
+   "blue": 0.283
+  },
+  "changed": [
+   "red 1",
+   "red 2"
+  ],
+  "eq_changed": [
+   "blue"
+  ]
+ },
+ "toggle_time x0.85": {
+  "p_red_win": 0.8309,
+  "e_margin_red": 20.35,
+  "top": {
+   "red 1": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+   "red 2": "take and hold Toggle R, Midfield at 10 s",
+   "blue 1": "score yellow on the Midfield Goal, Midfield at 10 s",
+   "blue 2": "take and hold Toggle T, Midfield at 10 s"
+  },
+  "top_p": {
+   "red 1": 0.8324,
+   "red 2": 0.8324,
+   "blue 1": 0.1761,
+   "blue 2": 0.1761
+  },
+  "second_gap": {
+   "red 1": 0.0,
+   "red 2": 0.0,
+   "blue 1": 0.005,
+   "blue 2": 0.007
+  },
+  "eq_top": {
+   "red": {
+    "red 1": "take and hold Toggle R, Midfield at 10 s",
+    "red 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+   },
+   "blue": {
+    "blue 1": "take and hold Toggle L, Midfield at 10 s",
+    "blue 2": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+   }
+  },
+  "eq_top_p": {
+   "red": 0.579,
+   "blue": 0.52
+  },
+  "changed": [
+   "red 1",
+   "red 2",
+   "blue 1",
+   "blue 2"
+  ],
+  "eq_changed": [
+   "blue"
+  ]
+ },
+ "toggle_time x1.15": {
+  "p_red_win": 0.823,
+  "e_margin_red": 34.78,
+  "top": {
+   "red 1": "take and hold Toggle L, Midfield at 10 s",
+   "red 2": "take and hold Toggle R, Midfield at 10 s",
+   "blue 1": "score yellow on the Midfield Goal, Midfield at 10 s",
+   "blue 2": "take and hold Toggle T, Midfield at 10 s"
+  },
+  "top_p": {
+   "red 1": 0.8251,
+   "red 2": 0.8251,
+   "blue 1": 0.1773,
+   "blue 2": 0.1773
+  },
+  "second_gap": {
+   "red 1": 0.002,
+   "red 2": 0.002,
+   "blue 1": 0.0,
+   "blue 2": 0.0
+  },
+  "eq_top": {
+   "red": {
+    "red 1": "take and hold Toggle R, Midfield at 10 s",
+    "red 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+   },
+   "blue": {
+    "blue 1": "take and hold Toggle R, Midfield at 10 s",
+    "blue 2": "take and hold Toggle L, Midfield at 10 s"
+   }
+  },
+  "eq_top_p": {
+   "red": 0.858,
+   "blue": 0.379
+  },
+  "changed": [
+   "red 1",
+   "red 2",
+   "blue 1",
+   "blue 2"
+  ],
+  "eq_changed": [
+   "blue"
+  ]
+ },
+ "push_success x0.85": {
+  "p_red_win": 0.8513,
+  "e_margin_red": 49.9,
+  "top": {
+   "red 1": "take and hold Toggle R, Midfield at 10 s",
+   "red 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+   "blue 1": "take and hold Toggle L, Midfield at 10 s",
+   "blue 2": "take and hold Toggle R, Midfield at the last moment"
+  },
+  "top_p": {
+   "red 1": 0.8513,
+   "red 2": 0.8513,
+   "blue 1": 0.1921,
+   "blue 2": 0.1921
+  },
+  "second_gap": {
+   "red 1": 0.0,
+   "red 2": 0.0,
+   "blue 1": 0.026,
+   "blue 2": 0.005
+  },
+  "eq_top": {
+   "red": {
+    "red 1": "take and hold Toggle R, Midfield at 10 s",
+    "red 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+   },
+   "blue": {
+    "blue 1": "score yellow on the Midfield Goal, Midfield at 10 s",
+    "blue 2": "take and hold Toggle T, Midfield at 10 s"
+   }
+  },
+  "eq_top_p": {
+   "red": 0.876,
+   "blue": 0.641
+  },
+  "changed": [
+   "red 2"
+  ],
+  "eq_changed": [
+   "blue"
+  ]
+ },
+ "push_success x1.15": {
+  "p_red_win": 0.8219,
+  "e_margin_red": 40.94,
+  "top": {
+   "red 1": "take and hold Toggle R, Midfield at 10 s",
+   "red 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+   "blue 1": "score yellow on the Midfield Goal, Midfield at the last moment",
+   "blue 2": "take and hold Toggle T, Midfield at 10 s"
+  },
+  "top_p": {
+   "red 1": 0.822,
+   "red 2": 0.822,
+   "blue 1": 0.1783,
+   "blue 2": 0.1783
+  },
+  "second_gap": {
+   "red 1": 0.0,
+   "red 2": 0.0,
+   "blue 1": 0.0,
+   "blue 2": 0.0
+  },
+  "eq_top": {
+   "red": {
+    "red 1": "take and hold Toggle R, Midfield at 10 s",
+    "red 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+   },
+   "blue": {
+    "blue 1": "score yellow on the Midfield Goal, Midfield at the last moment",
+    "blue 2": "take and hold Toggle T, Midfield at 10 s"
+   }
+  },
+  "eq_top_p": {
+   "red": 0.847,
+   "blue": 0.619
+  },
+  "changed": [
+   "red 2",
+   "blue 1",
+   "blue 2"
+  ],
+  "eq_changed": []
+ },
+ "blue 2 without toggle": {
+  "p_red_win": 0.8725,
+  "e_margin_red": 26.93,
+  "top": {
+   "red 1": "take and hold Toggle L, Midfield at the last moment",
+   "red 2": "take and hold Toggle R, Midfield at 10 s",
+   "blue 1": "take and hold Toggle L, Midfield at 10 s",
+   "blue 2": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+  },
+  "top_p": {
+   "red 1": 0.8725,
+   "red 2": 0.8725,
+   "blue 1": 0.1277,
+   "blue 2": 0.1277
+  },
+  "second_gap": {
+   "red 1": 0.0,
+   "red 2": 0.0,
+   "blue 1": 0.001,
+   "blue 2": 0.0
+  },
+  "eq_top": {
+   "red": {
+    "red 1": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+    "red 2": "take and hold Toggle R, Midfield at 10 s"
+   },
+   "blue": {
+    "blue 1": "take and hold Toggle L, Midfield at 10 s",
+    "blue 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+   }
+  },
+  "eq_top_p": {
+   "red": 0.454,
+   "blue": 0.471
+  },
+  "changed": [
+   "red 1",
+   "red 2",
+   "blue 2"
+  ],
+  "eq_changed": [
+   "red",
+   "blue"
+  ]
+ }
+}

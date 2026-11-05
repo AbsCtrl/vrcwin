@@ -1,0 +1,132 @@
+  round 0: 16x16 value 0.613, red could gain +0.316, blue could gain +0.200
+  round 1: 17x17 value 0.852, red could gain +0.105, blue could gain +0.000
+  round 2: 18x17 value 0.857, red could gain +0.048, blue could gain +0.051
+  round 3: 19x18 value 0.850, red could gain -0.000, blue could gain +0.018
+  round 4: 19x19 value 0.839, red could gain +0.005, blue could gain +0.000
+25 s left. Value: P(red win) 0.838, E[red margin] +47.9. Best deviation found: red +0.005, blue +0.000
+
+Equilibrium:
+  red 0.86: red 1: take and hold Toggle R, Midfield at 10 s; red 2: score Pins (yellow where we own the Quadrant), Midfield at 10 s
+  red 0.11: red 1: score Pins (yellow where we own the Quadrant), Midfield at 10 s; red 2: take and hold Toggle R, Midfield at 10 s
+  blue 0.68: blue 1: score yellow on the Midfield Goal, Midfield at the last moment; blue 2: take and hold Toggle T, Midfield at 10 s
+  blue 0.17: blue 1: score Pins (yellow where we own the Quadrant), Midfield at 10 s; blue 2: take and hold Toggle L, Midfield at the last moment
+  blue 0.15: blue 1: take and hold Toggle L, Midfield at 10 s; blue 2: score Pins (yellow where we own the Quadrant), Midfield at the last moment
+
+red 1 (red) lines: P(win) for red, margin, Δ vs best, equilibrium weight
+   0.843   +51.4  Δ+0.000  w=0.86  take and hold Toggle R, Midfield at 10 s
+   0.838   +84.2  Δ-0.005  w=0.11  score Pins (yellow where we own the Quadrant), Midfield at 10 s
+   0.836   +53.5  Δ-0.007  w=0.01  take and hold Toggle L, Midfield at 10 s
+   0.836   +51.7  Δ-0.007  w=0.02  score Pins (yellow where we own the Quadrant), Midfield at the last moment
+   0.834   +52.7  Δ-0.009  w=0.00  score Pins (yellow where we own the Quadrant), stay on it to the buzzer
+   0.754   +63.5  Δ-0.089  w=0.00  take and hold Toggle T, Midfield at 10 s
+   0.754   +42.8  Δ-0.089  w=0.00  take and hold Toggle B, Midfield at 10 s
+   0.749   +64.6  Δ-0.094  w=0.00  score yellow on the Midfield Goal, Midfield at 10 s
+   0.739   +41.8  Δ-0.104  w=0.00  score yellow on the Midfield Goal, Midfield at the last moment
+   0.735   +38.7  Δ-0.108  w=0.00  score yellow on the Midfield Goal, stay on it to the buzzer
+   0.734   +49.1  Δ-0.109  w=0.00  take and hold Toggle T, Midfield at the last moment
+   0.728   +29.6  Δ-0.115  w=0.00  take and hold the Midfield all window
+   0.711   +12.2  Δ-0.132  w=0.00  take and hold Toggle L, stay on it to the buzzer
+   0.691   +15.4  Δ-0.152  w=0.00  take and hold Toggle L, Midfield at the last moment
+   0.585   +15.2  Δ-0.258  w=0.00  take and hold Toggle T, stay on it to the buzzer
+   0.483   -21.2  Δ-0.359  w=0.00  take and hold Toggle R, stay on it to the buzzer
+   0.483   -21.2  Δ-0.359  w=0.00  take and hold Toggle R, Midfield at the last moment
+   0.411   -24.0  Δ-0.432  w=0.00  take and hold Toggle B, stay on it to the buzzer
+   0.411   -24.0  Δ-0.432  w=0.00  take and hold Toggle B, Midfield at the last moment
+
+red 2 (red) lines: P(win) for red, margin, Δ vs best, equilibrium weight
+   0.843   +51.4  Δ+0.000  w=0.00  take and hold Toggle L, Midfield at 10 s
+   0.838   +42.9  Δ-0.005  w=0.86  score Pins (yellow where we own the Quadrant), Midfield at 10 s
+   0.838   +84.2  Δ-0.005  w=0.12  take and hold Toggle R, Midfield at 10 s
+   0.836   +51.7  Δ-0.007  w=0.02  score Pins (yellow where we own the Quadrant), Midfield at the last moment
+   0.835   +57.7  Δ-0.008  w=0.00  take and hold Toggle R, Midfield at the last moment
+   0.830   +52.8  Δ-0.013  w=0.00  score Pins (yellow where we own the Quadrant), stay on it to the buzzer
+   0.802   +54.1  Δ-0.041  w=0.00  take and hold Toggle T, Midfield at 10 s
+   0.758   +29.9  Δ-0.085  w=0.00  take and hold the Midfield all window
+   0.744   +39.8  Δ-0.099  w=0.00  take and hold Toggle B, Midfield at 10 s
+   0.735   +67.0  Δ-0.108  w=0.00  score yellow on the Midfield Goal, Midfield at the last moment
+   0.714   +53.9  Δ-0.129  w=0.00  score yellow on the Midfield Goal, Midfield at 10 s
+   0.649    +4.7  Δ-0.194  w=0.00  take and hold Toggle L, stay on it to the buzzer
+   0.640   +17.9  Δ-0.203  w=0.00  take and hold Toggle R, stay on it to the buzzer
+   0.619   +23.2  Δ-0.224  w=0.00  take and hold Toggle T, stay on it to the buzzer
+   0.619   +23.2  Δ-0.224  w=0.00  take and hold Toggle T, Midfield at the last moment
+   0.608    +7.8  Δ-0.235  w=0.00  take and hold Toggle L, Midfield at the last moment
+   0.607    +7.7  Δ-0.235  w=0.00  score yellow on the Midfield Goal, stay on it to the buzzer
+   0.497   -23.3  Δ-0.346  w=0.00  take and hold Toggle B, stay on it to the buzzer
+   0.497   -23.3  Δ-0.346  w=0.00  take and hold Toggle B, Midfield at the last moment
+
+blue 1 (blue) lines: P(win) for blue, margin, Δ vs best, equilibrium weight
+   0.193   -19.2  Δ+0.000  w=0.15  take and hold Toggle L, Midfield at 10 s
+   0.162   -63.5  Δ-0.030  w=0.68  score yellow on the Midfield Goal, Midfield at the last moment
+   0.160   -12.2  Δ-0.033  w=0.17  score Pins (yellow where we own the Quadrant), Midfield at 10 s
+   0.151   -25.6  Δ-0.042  w=0.00  take and hold Toggle R, Midfield at 10 s
+   0.150   -19.4  Δ-0.043  w=0.00  take and hold Toggle R, Midfield at the last moment
+   0.144   -69.6  Δ-0.048  w=0.00  score yellow on the Midfield Goal, Midfield at 10 s
+   0.128   -28.9  Δ-0.065  w=0.00  score Pins (yellow where we own the Quadrant), Midfield at the last moment
+   0.115    -4.5  Δ-0.078  w=0.00  take and hold Toggle B, Midfield at the last moment
+   0.097    -5.9  Δ-0.095  w=0.00  take and hold Toggle B, Midfield at 10 s
+   0.059   -20.2  Δ-0.133  w=0.00  take and hold Toggle T, Midfield at the last moment
+   0.056   -22.3  Δ-0.136  w=0.00  take and hold Toggle T, Midfield at 10 s
+   0.024   -39.0  Δ-0.169  w=0.00  take and hold Toggle B, stay on it to the buzzer
+   0.023   -39.1  Δ-0.170  w=0.00  take and hold Toggle L, stay on it to the buzzer
+   0.023   -39.1  Δ-0.170  w=0.00  take and hold Toggle L, Midfield at the last moment
+   0.015   -37.9  Δ-0.177  w=0.00  score Pins (yellow where we own the Quadrant), stay on it to the buzzer
+   0.015   -40.3  Δ-0.178  w=0.00  take and hold the Midfield all window
+   0.008   -35.7  Δ-0.185  w=0.00  take and hold Toggle R, stay on it to the buzzer
+   0.008   -55.0  Δ-0.185  w=0.00  take and hold Toggle T, stay on it to the buzzer
+   0.005  -184.5  Δ-0.188  w=0.00  score yellow on the Midfield Goal, stay on it to the buzzer
+
+blue 2 (blue) lines: P(win) for blue, margin, Δ vs best, equilibrium weight
+   0.193   -19.2  Δ+0.000  w=0.00  take and hold Toggle R, Midfield at the last moment
+   0.187   -22.2  Δ-0.006  w=0.00  take and hold Toggle R, Midfield at 10 s
+   0.162   -63.5  Δ-0.030  w=0.68  take and hold Toggle T, Midfield at 10 s
+   0.161   -18.0  Δ-0.032  w=0.15  score Pins (yellow where we own the Quadrant), Midfield at the last moment
+   0.160   -12.2  Δ-0.033  w=0.17  take and hold Toggle L, Midfield at the last moment
+   0.150   -19.4  Δ-0.043  w=0.00  take and hold Toggle L, Midfield at 10 s
+   0.105   -63.5  Δ-0.087  w=0.00  score yellow on the Midfield Goal, Midfield at 10 s
+   0.095    -3.7  Δ-0.098  w=0.00  take and hold Toggle B, Midfield at 10 s
+   0.094   -21.8  Δ-0.098  w=0.00  score Pins (yellow where we own the Quadrant), Midfield at 10 s
+   0.064   -38.8  Δ-0.129  w=0.00  take and hold the Midfield all window
+   0.050   -22.1  Δ-0.143  w=0.00  take and hold Toggle T, Midfield at the last moment
+   0.025   -50.9  Δ-0.168  w=0.00  score yellow on the Midfield Goal, Midfield at the last moment
+   0.024   -39.1  Δ-0.169  w=0.00  take and hold Toggle B, stay on it to the buzzer
+   0.024   -39.1  Δ-0.169  w=0.00  take and hold Toggle B, Midfield at the last moment
+   0.020   -39.1  Δ-0.172  w=0.00  take and hold Toggle L, stay on it to the buzzer
+   0.015   -36.0  Δ-0.178  w=0.00  take and hold Toggle R, stay on it to the buzzer
+   0.005   -56.1  Δ-0.188  w=0.00  take and hold Toggle T, stay on it to the buzzer
+   0.005  -184.2  Δ-0.188  w=0.00  score yellow on the Midfield Goal, stay on it to the buzzer
+   0.003  -175.8  Δ-0.190  w=0.00  score Pins (yellow where we own the Quadrant), stay on it to the buzzer
+
+Sample window under the most likely plans:
+  25.00s  red 1: flip Toggle R
+  25.00s  red 2: intake Pin from floor stack S_S
+  25.00s  blue 1: score yellow half on Midfield Goal
+  25.00s  blue 2: flip Toggle T
+  23.25s  blue 1: intake Pin from floor stack S_N
+  23.05s  blue 2: guard Toggle T
+  23.00s  red 2: score yellow half on Quadrant B
+  22.05s  red 1: flip Toggle R
+  21.50s  red 2: intake Pin from own Loader
+  21.35s  blue 1: intake Pin from floor stack S_N
+  20.55s  red 1: guard Toggle R
+  20.05s  blue 1: score yellow half on Midfield Goal
+  20.05s  blue 2: guard Toggle T
+  19.00s  red 2: score yellow half on Quadrant L
+  18.80s  blue 1: score yellow half on Midfield Goal
+  18.00s  blue 1: intake Pin from floor stack S_N
+  17.55s  red 1: guard Toggle R
+  17.30s  red 2: intake Pin from own Loader
+  17.05s  blue 2: guard Toggle T
+  16.40s  blue 1: score yellow half on Midfield Goal
+  15.25s  red 2: score yellow half on Quadrant L
+  15.25s  blue 1: intake Pin from floor stack S_N
+  14.55s  red 1: guard Toggle R
+  14.05s  blue 2: guard Toggle T
+  13.70s  blue 1: score yellow half on Midfield Goal
+  13.60s  red 2: intake Pin from own Loader
+  12.55s  blue 1: intake Pin from floor stack S_TL
+  11.55s  red 1: guard Toggle R
+  11.55s  red 2: score yellow half on Quadrant L
+  11.05s  blue 2: guard Toggle T
+  final 256-124
+
+380.4 s

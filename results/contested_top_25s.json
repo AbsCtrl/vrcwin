@@ -1,0 +1,1165 @@
+{
+ "scenario": "25 s left, red up 4 on fixed points. Top Toggle is neutral, 3 yellow halves sit on the Midfield Goal, every robot is a reference robot.",
+ "time_remaining": 25.0,
+ "overall": {
+  "p_red_win": 0.8382,
+  "e_margin_red": 47.9,
+  "red_could_gain": 0.0048,
+  "blue_could_gain": 0.0
+ },
+ "equilibrium": {
+  "red": [
+   {
+    "p": 0.856,
+    "plan": {
+     "red 1": "take and hold Toggle R, Midfield at 10 s",
+     "red 2": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+    }
+   },
+   {
+    "p": 0.113,
+    "plan": {
+     "red 1": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+     "red 2": "take and hold Toggle R, Midfield at 10 s"
+    }
+   }
+  ],
+  "blue": [
+   {
+    "p": 0.678,
+    "plan": {
+     "blue 1": "score yellow on the Midfield Goal, Midfield at the last moment",
+     "blue 2": "take and hold Toggle T, Midfield at 10 s"
+    }
+   },
+   {
+    "p": 0.175,
+    "plan": {
+     "blue 1": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+     "blue 2": "take and hold Toggle L, Midfield at the last moment"
+    }
+   },
+   {
+    "p": 0.147,
+    "plan": {
+     "blue 1": "take and hold Toggle L, Midfield at 10 s",
+     "blue 2": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    }
+   }
+  ]
+ },
+ "lines": {
+  "red 1": {
+   "alliance": "red",
+   "lines": [
+    {
+     "line": "take and hold Toggle R, Midfield at 10 s",
+     "plan": [
+      "control:R",
+      "mid@10"
+     ],
+     "p_win": 0.8429,
+     "e_margin": 51.42,
+     "eq_weight": 0.856,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+     "plan": [
+      "score",
+      "mid@10"
+     ],
+     "p_win": 0.838,
+     "e_margin": 84.16,
+     "eq_weight": 0.113,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle L, Midfield at 10 s",
+     "plan": [
+      "control:L",
+      "mid@10"
+     ],
+     "p_win": 0.8363,
+     "e_margin": 53.47,
+     "eq_weight": 0.011,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), Midfield at the last moment",
+     "plan": [
+      "score",
+      "mid@late"
+     ],
+     "p_win": 0.836,
+     "e_margin": 51.71,
+     "eq_weight": 0.019,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), stay on it to the buzzer",
+     "plan": [
+      "score",
+      "stay"
+     ],
+     "p_win": 0.8337,
+     "e_margin": 52.71,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle T, Midfield at 10 s",
+     "plan": [
+      "control:T",
+      "mid@10"
+     ],
+     "p_win": 0.7541,
+     "e_margin": 63.46,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle B, Midfield at 10 s",
+     "plan": [
+      "control:B",
+      "mid@10"
+     ],
+     "p_win": 0.7537,
+     "e_margin": 42.77,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, Midfield at 10 s",
+     "plan": [
+      "score_mid",
+      "mid@10"
+     ],
+     "p_win": 0.749,
+     "e_margin": 64.59,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, Midfield at the last moment",
+     "plan": [
+      "score_mid",
+      "mid@late"
+     ],
+     "p_win": 0.7392,
+     "e_margin": 41.8,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, stay on it to the buzzer",
+     "plan": [
+      "score_mid",
+      "stay"
+     ],
+     "p_win": 0.7345,
+     "e_margin": 38.74,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle T, Midfield at the last moment",
+     "plan": [
+      "control:T",
+      "mid@late"
+     ],
+     "p_win": 0.7335,
+     "e_margin": 49.08,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    },
+    {
+     "line": "take and hold the Midfield all window",
+     "plan": [
+      "midfield",
+      "stay"
+     ],
+     "p_win": 0.728,
+     "e_margin": 29.59,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle L, stay on it to the buzzer",
+     "plan": [
+      "control:L",
+      "stay"
+     ],
+     "p_win": 0.7111,
+     "e_margin": 12.23,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle L, Midfield at the last moment",
+     "plan": [
+      "control:L",
+      "mid@late"
+     ],
+     "p_win": 0.6913,
+     "e_margin": 15.4,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle T, stay on it to the buzzer",
+     "plan": [
+      "control:T",
+      "stay"
+     ],
+     "p_win": 0.5853,
+     "e_margin": 15.25,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle R, stay on it to the buzzer",
+     "plan": [
+      "control:R",
+      "stay"
+     ],
+     "p_win": 0.4834,
+     "e_margin": -21.17,
+     "eq_weight": 0.0,
+     "best_partner": "score yellow on the Midfield Goal, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle R, Midfield at the last moment",
+     "plan": [
+      "control:R",
+      "mid@late"
+     ],
+     "p_win": 0.4834,
+     "e_margin": -21.17,
+     "eq_weight": 0.0,
+     "best_partner": "score yellow on the Midfield Goal, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle B, stay on it to the buzzer",
+     "plan": [
+      "control:B",
+      "stay"
+     ],
+     "p_win": 0.4113,
+     "e_margin": -24.0,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle B, Midfield at the last moment",
+     "plan": [
+      "control:B",
+      "mid@late"
+     ],
+     "p_win": 0.4113,
+     "e_margin": -24.0,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at the last moment"
+    }
+   ]
+  },
+  "red 2": {
+   "alliance": "red",
+   "lines": [
+    {
+     "line": "take and hold Toggle L, Midfield at 10 s",
+     "plan": [
+      "control:L",
+      "mid@10"
+     ],
+     "p_win": 0.8429,
+     "e_margin": 51.42,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+     "plan": [
+      "score",
+      "mid@10"
+     ],
+     "p_win": 0.8383,
+     "e_margin": 42.93,
+     "eq_weight": 0.856,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle R, Midfield at 10 s",
+     "plan": [
+      "control:R",
+      "mid@10"
+     ],
+     "p_win": 0.838,
+     "e_margin": 84.16,
+     "eq_weight": 0.121,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), Midfield at the last moment",
+     "plan": [
+      "score",
+      "mid@late"
+     ],
+     "p_win": 0.836,
+     "e_margin": 51.71,
+     "eq_weight": 0.019,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle R, Midfield at the last moment",
+     "plan": [
+      "control:R",
+      "mid@late"
+     ],
+     "p_win": 0.8345,
+     "e_margin": 57.71,
+     "eq_weight": 0.004,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), stay on it to the buzzer",
+     "plan": [
+      "score",
+      "stay"
+     ],
+     "p_win": 0.8301,
+     "e_margin": 52.77,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), stay on it to the buzzer"
+    },
+    {
+     "line": "take and hold Toggle T, Midfield at 10 s",
+     "plan": [
+      "control:T",
+      "mid@10"
+     ],
+     "p_win": 0.8017,
+     "e_margin": 54.12,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold the Midfield all window",
+     "plan": [
+      "midfield",
+      "stay"
+     ],
+     "p_win": 0.7576,
+     "e_margin": 29.9,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle B, Midfield at 10 s",
+     "plan": [
+      "control:B",
+      "mid@10"
+     ],
+     "p_win": 0.7438,
+     "e_margin": 39.75,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, Midfield at the last moment",
+     "plan": [
+      "score_mid",
+      "mid@late"
+     ],
+     "p_win": 0.7348,
+     "e_margin": 67.01,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, Midfield at 10 s",
+     "plan": [
+      "score_mid",
+      "mid@10"
+     ],
+     "p_win": 0.7136,
+     "e_margin": 53.9,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle L, stay on it to the buzzer",
+     "plan": [
+      "control:L",
+      "stay"
+     ],
+     "p_win": 0.6488,
+     "e_margin": 4.69,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle R, stay on it to the buzzer",
+     "plan": [
+      "control:R",
+      "stay"
+     ],
+     "p_win": 0.6403,
+     "e_margin": 17.95,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle T, stay on it to the buzzer",
+     "plan": [
+      "control:T",
+      "stay"
+     ],
+     "p_win": 0.6192,
+     "e_margin": 23.17,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle T, Midfield at the last moment",
+     "plan": [
+      "control:T",
+      "mid@late"
+     ],
+     "p_win": 0.6192,
+     "e_margin": 23.17,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle L, Midfield at the last moment",
+     "plan": [
+      "control:L",
+      "mid@late"
+     ],
+     "p_win": 0.6081,
+     "e_margin": 7.81,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at 10 s"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, stay on it to the buzzer",
+     "plan": [
+      "score_mid",
+      "stay"
+     ],
+     "p_win": 0.6074,
+     "e_margin": 7.68,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle B, stay on it to the buzzer",
+     "plan": [
+      "control:B",
+      "stay"
+     ],
+     "p_win": 0.4972,
+     "e_margin": -23.28,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle B, Midfield at the last moment",
+     "plan": [
+      "control:B",
+      "mid@late"
+     ],
+     "p_win": 0.4972,
+     "e_margin": -23.28,
+     "eq_weight": 0.0,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+    }
+   ]
+  },
+  "blue 1": {
+   "alliance": "blue",
+   "lines": [
+    {
+     "line": "take and hold Toggle L, Midfield at 10 s",
+     "plan": [
+      "control:L",
+      "mid@10"
+     ],
+     "p_win": 0.1928,
+     "e_margin": -19.16,
+     "eq_weight": 0.147,
+     "best_partner": "take and hold Toggle R, Midfield at the last moment"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, Midfield at the last moment",
+     "plan": [
+      "score_mid",
+      "mid@late"
+     ],
+     "p_win": 0.1623,
+     "e_margin": -63.52,
+     "eq_weight": 0.678,
+     "best_partner": "take and hold Toggle T, Midfield at 10 s"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+     "plan": [
+      "score",
+      "mid@10"
+     ],
+     "p_win": 0.1603,
+     "e_margin": -12.18,
+     "eq_weight": 0.175,
+     "best_partner": "take and hold Toggle L, Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle R, Midfield at 10 s",
+     "plan": [
+      "control:R",
+      "mid@10"
+     ],
+     "p_win": 0.1511,
+     "e_margin": -25.65,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle R, Midfield at the last moment",
+     "plan": [
+      "control:R",
+      "mid@late"
+     ],
+     "p_win": 0.15,
+     "e_margin": -19.4,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, Midfield at 10 s",
+     "plan": [
+      "score_mid",
+      "mid@10"
+     ],
+     "p_win": 0.1445,
+     "e_margin": -69.56,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle T, Midfield at 10 s"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), Midfield at the last moment",
+     "plan": [
+      "score",
+      "mid@late"
+     ],
+     "p_win": 0.1278,
+     "e_margin": -28.86,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle B, Midfield at the last moment",
+     "plan": [
+      "control:B",
+      "mid@late"
+     ],
+     "p_win": 0.1149,
+     "e_margin": -4.48,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle B, Midfield at 10 s",
+     "plan": [
+      "control:B",
+      "mid@10"
+     ],
+     "p_win": 0.0974,
+     "e_margin": -5.92,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle T, Midfield at the last moment",
+     "plan": [
+      "control:T",
+      "mid@late"
+     ],
+     "p_win": 0.0594,
+     "e_margin": -20.18,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle T, Midfield at 10 s",
+     "plan": [
+      "control:T",
+      "mid@10"
+     ],
+     "p_win": 0.0564,
+     "e_margin": -22.27,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle B, stay on it to the buzzer",
+     "plan": [
+      "control:B",
+      "stay"
+     ],
+     "p_win": 0.0238,
+     "e_margin": -39.04,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle L, stay on it to the buzzer",
+     "plan": [
+      "control:L",
+      "stay"
+     ],
+     "p_win": 0.0229,
+     "e_margin": -39.09,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle B, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle L, Midfield at the last moment",
+     "plan": [
+      "control:L",
+      "mid@late"
+     ],
+     "p_win": 0.0229,
+     "e_margin": -39.09,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle B, Midfield at 10 s"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), stay on it to the buzzer",
+     "plan": [
+      "score",
+      "stay"
+     ],
+     "p_win": 0.0155,
+     "e_margin": -37.93,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold the Midfield all window",
+     "plan": [
+      "midfield",
+      "stay"
+     ],
+     "p_win": 0.0146,
+     "e_margin": -40.28,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle R, stay on it to the buzzer",
+     "plan": [
+      "control:R",
+      "stay"
+     ],
+     "p_win": 0.0082,
+     "e_margin": -35.74,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle T, stay on it to the buzzer",
+     "plan": [
+      "control:T",
+      "stay"
+     ],
+     "p_win": 0.0078,
+     "e_margin": -55.01,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, stay on it to the buzzer",
+     "plan": [
+      "score_mid",
+      "stay"
+     ],
+     "p_win": 0.0046,
+     "e_margin": -184.48,
+     "eq_weight": 0.0,
+     "best_partner": "score yellow on the Midfield Goal, Midfield at the last moment"
+    }
+   ]
+  },
+  "blue 2": {
+   "alliance": "blue",
+   "lines": [
+    {
+     "line": "take and hold Toggle R, Midfield at the last moment",
+     "plan": [
+      "control:R",
+      "mid@late"
+     ],
+     "p_win": 0.1928,
+     "e_margin": -19.16,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle R, Midfield at 10 s",
+     "plan": [
+      "control:R",
+      "mid@10"
+     ],
+     "p_win": 0.1869,
+     "e_margin": -22.16,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle T, Midfield at 10 s",
+     "plan": [
+      "control:T",
+      "mid@10"
+     ],
+     "p_win": 0.1623,
+     "e_margin": -63.52,
+     "eq_weight": 0.678,
+     "best_partner": "score yellow on the Midfield Goal, Midfield at the last moment"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), Midfield at the last moment",
+     "plan": [
+      "score",
+      "mid@late"
+     ],
+     "p_win": 0.1612,
+     "e_margin": -18.01,
+     "eq_weight": 0.147,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle L, Midfield at the last moment",
+     "plan": [
+      "control:L",
+      "mid@late"
+     ],
+     "p_win": 0.1603,
+     "e_margin": -12.18,
+     "eq_weight": 0.175,
+     "best_partner": "score Pins (yellow where we own the Quadrant), Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle L, Midfield at 10 s",
+     "plan": [
+      "control:L",
+      "mid@10"
+     ],
+     "p_win": 0.15,
+     "e_margin": -19.4,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle R, Midfield at the last moment"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, Midfield at 10 s",
+     "plan": [
+      "score_mid",
+      "mid@10"
+     ],
+     "p_win": 0.1054,
+     "e_margin": -63.51,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle B, Midfield at the last moment"
+    },
+    {
+     "line": "take and hold Toggle B, Midfield at 10 s",
+     "plan": [
+      "control:B",
+      "mid@10"
+     ],
+     "p_win": 0.0946,
+     "e_margin": -3.68,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), Midfield at 10 s",
+     "plan": [
+      "score",
+      "mid@10"
+     ],
+     "p_win": 0.0944,
+     "e_margin": -21.78,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold the Midfield all window",
+     "plan": [
+      "midfield",
+      "stay"
+     ],
+     "p_win": 0.064,
+     "e_margin": -38.79,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle T, Midfield at the last moment",
+     "plan": [
+      "control:T",
+      "mid@late"
+     ],
+     "p_win": 0.0498,
+     "e_margin": -22.11,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, Midfield at the last moment",
+     "plan": [
+      "score_mid",
+      "mid@late"
+     ],
+     "p_win": 0.0246,
+     "e_margin": -50.85,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle B, stay on it to the buzzer",
+     "plan": [
+      "control:B",
+      "stay"
+     ],
+     "p_win": 0.0236,
+     "e_margin": -39.09,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle B, Midfield at the last moment",
+     "plan": [
+      "control:B",
+      "mid@late"
+     ],
+     "p_win": 0.0236,
+     "e_margin": -39.09,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle L, stay on it to the buzzer",
+     "plan": [
+      "control:L",
+      "stay"
+     ],
+     "p_win": 0.0203,
+     "e_margin": -39.11,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle B, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle R, stay on it to the buzzer",
+     "plan": [
+      "control:R",
+      "stay"
+     ],
+     "p_win": 0.0147,
+     "e_margin": -36.03,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "take and hold Toggle T, stay on it to the buzzer",
+     "plan": [
+      "control:T",
+      "stay"
+     ],
+     "p_win": 0.0053,
+     "e_margin": -56.06,
+     "eq_weight": 0.0,
+     "best_partner": "take and hold Toggle L, Midfield at 10 s"
+    },
+    {
+     "line": "score yellow on the Midfield Goal, stay on it to the buzzer",
+     "plan": [
+      "score_mid",
+      "stay"
+     ],
+     "p_win": 0.0046,
+     "e_margin": -184.16,
+     "eq_weight": 0.0,
+     "best_partner": "score yellow on the Midfield Goal, Midfield at the last moment"
+    },
+    {
+     "line": "score Pins (yellow where we own the Quadrant), stay on it to the buzzer",
+     "plan": [
+      "score",
+      "stay"
+     ],
+     "p_win": 0.0028,
+     "e_margin": -175.77,
+     "eq_weight": 0.0,
+     "best_partner": "score yellow on the Midfield Goal, Midfield at the last moment"
+    }
+   ]
+  }
+ },
+ "sample_trace": [
+  {
+   "t": 25.0,
+   "robot": "red 1",
+   "action": "flip Toggle R"
+  },
+  {
+   "t": 25.0,
+   "robot": "red 2",
+   "action": "intake Pin from floor stack S_S"
+  },
+  {
+   "t": 25.0,
+   "robot": "blue 1",
+   "action": "score yellow half on Midfield Goal"
+  },
+  {
+   "t": 25.0,
+   "robot": "blue 2",
+   "action": "flip Toggle T"
+  },
+  {
+   "t": 23.25,
+   "robot": "blue 1",
+   "action": "intake Pin from floor stack S_N"
+  },
+  {
+   "t": 23.05,
+   "robot": "blue 2",
+   "action": "guard Toggle T"
+  },
+  {
+   "t": 23.0,
+   "robot": "red 2",
+   "action": "score yellow half on Quadrant B"
+  },
+  {
+   "t": 22.05,
+   "robot": "red 1",
+   "action": "flip Toggle R"
+  },
+  {
+   "t": 21.5,
+   "robot": "red 2",
+   "action": "intake Pin from own Loader"
+  },
+  {
+   "t": 21.35,
+   "robot": "blue 1",
+   "action": "intake Pin from floor stack S_N"
+  },
+  {
+   "t": 20.55,
+   "robot": "red 1",
+   "action": "guard Toggle R"
+  },
+  {
+   "t": 20.05,
+   "robot": "blue 1",
+   "action": "score yellow half on Midfield Goal"
+  },
+  {
+   "t": 20.05,
+   "robot": "blue 2",
+   "action": "guard Toggle T"
+  },
+  {
+   "t": 19.0,
+   "robot": "red 2",
+   "action": "score yellow half on Quadrant L"
+  },
+  {
+   "t": 18.8,
+   "robot": "blue 1",
+   "action": "score yellow half on Midfield Goal"
+  },
+  {
+   "t": 18.0,
+   "robot": "blue 1",
+   "action": "intake Pin from floor stack S_N"
+  },
+  {
+   "t": 17.55,
+   "robot": "red 1",
+   "action": "guard Toggle R"
+  },
+  {
+   "t": 17.3,
+   "robot": "red 2",
+   "action": "intake Pin from own Loader"
+  },
+  {
+   "t": 17.05,
+   "robot": "blue 2",
+   "action": "guard Toggle T"
+  },
+  {
+   "t": 16.4,
+   "robot": "blue 1",
+   "action": "score yellow half on Midfield Goal"
+  },
+  {
+   "t": 15.25,
+   "robot": "red 2",
+   "action": "score yellow half on Quadrant L"
+  },
+  {
+   "t": 15.25,
+   "robot": "blue 1",
+   "action": "intake Pin from floor stack S_N"
+  },
+  {
+   "t": 14.55,
+   "robot": "red 1",
+   "action": "guard Toggle R"
+  },
+  {
+   "t": 14.05,
+   "robot": "blue 2",
+   "action": "guard Toggle T"
+  },
+  {
+   "t": 13.7,
+   "robot": "blue 1",
+   "action": "score yellow half on Midfield Goal"
+  },
+  {
+   "t": 13.6,
+   "robot": "red 2",
+   "action": "intake Pin from own Loader"
+  },
+  {
+   "t": 12.55,
+   "robot": "blue 1",
+   "action": "intake Pin from floor stack S_TL"
+  },
+  {
+   "t": 11.55,
+   "robot": "red 1",
+   "action": "guard Toggle R"
+  },
+  {
+   "t": 11.55,
+   "robot": "red 2",
+   "action": "score yellow half on Quadrant L"
+  },
+  {
+   "t": 11.05,
+   "robot": "blue 2",
+   "action": "guard Toggle T"
+  },
+  {
+   "t": 10.0,
+   "robot": "blue 1",
+   "action": "score yellow half on Quadrant T"
+  },
+  {
+   "t": 9.9,
+   "robot": "red 2",
+   "action": "take/hold Midfield"
+  },
+  {
+   "t": 8.75,
+   "robot": "blue 1",
+   "action": "intake Pin from floor stack S_TL"
+  },
+  {
+   "t": 8.55,
+   "robot": "red 1",
+   "action": "take/hold Midfield"
+  },
+  {
+   "t": 8.05,
+   "robot": "blue 2",
+   "action": "take/hold Midfield"
+  },
+  {
+   "t": 7.15,
+   "robot": "blue 1",
+   "action": "score yellow half on Quadrant T"
+  },
+  {
+   "t": 6.6,
+   "robot": "red 2",
+   "action": "take/hold Midfield"
+  },
+  {
+   "t": 5.95,
+   "robot": "blue 1",
+   "action": "intake Pin from own Loader"
+  },
+  {
+   "t": 5.4,
+   "robot": "red 1",
+   "action": "take/hold Midfield"
+  },
+  {
+   "t": 4.9,
+   "robot": "blue 2",
+   "action": "push robot 0 out of Midfield"
+  },
+  {
+   "t": 4.55,
+   "robot": "red 2",
+   "action": "take/hold Midfield"
+  },
+  {
+   "t": 3.3,
+   "robot": "red 1",
+   "action": "take/hold Midfield"
+  },
+  {
+   "t": 2.8,
+   "robot": "blue 1",
+   "action": "score yellow half on Quadrant T"
+  },
+  {
+   "t": 2.5,
+   "robot": "red 2",
+   "action": "take/hold Midfield"
+  },
+  {
+   "t": 2.15,
+   "robot": "red 1",
+   "action": "take/hold Midfield"
+  },
+  {
+   "t": 2.15,
+   "robot": "blue 2",
+   "action": "push robot 1 out of Midfield"
+  },
+  {
+   "t": 1.05,
+   "robot": "blue 1",
+   "action": "take/hold Midfield"
+  },
+  {
+   "t": 0.45,
+   "robot": "red 2",
+   "action": "push robot 2 out of Midfield"
+  }
+ ],
+ "sample_final": [
+  256,
+  124
+ ],
+ "settings": {
+  "screen_iters": 200000,
+  "screen_episodes": 600,
+  "cell_episodes": 300,
+  "line_episodes": 150,
+  "shortlist": 4,
+  "seed": 0,
+  "oracle_rounds": 5
+ },
+ "seconds": 380.4
+}
